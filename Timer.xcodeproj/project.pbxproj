@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		79AFBA6B2A1BCDDA00BD8278 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AFBA6A2A1BCDDA00BD8278 /* AppDelegate.swift */; };
 		79AFBA6D2A1BCDDA00BD8278 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AFBA6C2A1BCDDA00BD8278 /* SceneDelegate.swift */; };
-		79AFBA6F2A1BCDDA00BD8278 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AFBA6E2A1BCDDA00BD8278 /* ViewController.swift */; };
-		79AFBA722A1BCDDA00BD8278 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79AFBA702A1BCDDA00BD8278 /* Main.storyboard */; };
+		79AFBA6F2A1BCDDA00BD8278 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AFBA6E2A1BCDDA00BD8278 /* TimerViewController.swift */; };
 		79AFBA742A1BCDDE00BD8278 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79AFBA732A1BCDDE00BD8278 /* Assets.xcassets */; };
 		79AFBA772A1BCDDE00BD8278 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79AFBA752A1BCDDE00BD8278 /* LaunchScreen.storyboard */; };
+		79AFBA7F2A1C1E9900BD8278 /* TimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AFBA7E2A1C1E9800BD8278 /* TimerState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		79AFBA672A1BCDDA00BD8278 /* Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79AFBA6A2A1BCDDA00BD8278 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79AFBA6C2A1BCDDA00BD8278 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		79AFBA6E2A1BCDDA00BD8278 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		79AFBA712A1BCDDA00BD8278 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79AFBA6E2A1BCDDA00BD8278 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		79AFBA732A1BCDDE00BD8278 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79AFBA762A1BCDDE00BD8278 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79AFBA782A1BCDDE00BD8278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79AFBA7E2A1C1E9800BD8278 /* TimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +58,8 @@
 			children = (
 				79AFBA6A2A1BCDDA00BD8278 /* AppDelegate.swift */,
 				79AFBA6C2A1BCDDA00BD8278 /* SceneDelegate.swift */,
-				79AFBA6E2A1BCDDA00BD8278 /* ViewController.swift */,
-				79AFBA702A1BCDDA00BD8278 /* Main.storyboard */,
+				79AFBA6E2A1BCDDA00BD8278 /* TimerViewController.swift */,
+				79AFBA7E2A1C1E9800BD8278 /* TimerState.swift */,
 				79AFBA732A1BCDDE00BD8278 /* Assets.xcassets */,
 				79AFBA752A1BCDDE00BD8278 /* LaunchScreen.storyboard */,
 				79AFBA782A1BCDDE00BD8278 /* Info.plist */,
@@ -127,7 +127,6 @@
 			files = (
 				79AFBA772A1BCDDE00BD8278 /* LaunchScreen.storyboard in Resources */,
 				79AFBA742A1BCDDE00BD8278 /* Assets.xcassets in Resources */,
-				79AFBA722A1BCDDA00BD8278 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79AFBA6F2A1BCDDA00BD8278 /* ViewController.swift in Sources */,
+				79AFBA6F2A1BCDDA00BD8278 /* TimerViewController.swift in Sources */,
+				79AFBA7F2A1C1E9900BD8278 /* TimerState.swift in Sources */,
 				79AFBA6B2A1BCDDA00BD8278 /* AppDelegate.swift in Sources */,
 				79AFBA6D2A1BCDDA00BD8278 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		79AFBA702A1BCDDA00BD8278 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79AFBA712A1BCDDA00BD8278 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		79AFBA752A1BCDDE00BD8278 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +284,6 @@
 				INFOPLIST_FILE = Timer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +311,6 @@
 				INFOPLIST_FILE = Timer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
